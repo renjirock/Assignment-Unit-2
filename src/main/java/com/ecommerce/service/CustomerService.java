@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package com.ecommerce.service;
 
-import com.example.demo.DTO.CustomerDto;
-import com.example.demo.model.Customer;
+import com.ecommerce.DTO.CustomerDto;
+import com.ecommerce.model.Customer;
 
 public interface CustomerService {
     public Customer getCustomer(int customerId);

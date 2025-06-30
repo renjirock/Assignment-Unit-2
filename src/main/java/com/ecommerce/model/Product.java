@@ -1,11 +1,13 @@
-package com.example.demo.model;
+package com.ecommerce.model;
 
 import lombok.*;
 
-@Data
+@Setter
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Customer {
+public class Product {
     private int id;
     private String name;
+    private double price;
 }

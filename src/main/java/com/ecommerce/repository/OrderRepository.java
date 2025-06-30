@@ -1,11 +1,12 @@
-package com.example.demo.repository;
+package com.ecommerce.repository;
 
-import com.example.demo.model.Order;
-import org.springframework.stereotype.Repository;
+import com.ecommerce.model.Order;
 
-@Repository
+import java.util.List;
+
 public interface OrderRepository {
     public Order createOrder (Order order);
     public void deleteOrder (Order order);
     public Order getOrder (int orderId);
+    public List<Order> gerOrders();
 }

@@ -1,7 +1,7 @@
-package com.example.demo.repository.impl;
+package com.ecommerce.repository.impl;
 
-import com.example.demo.model.Customer;
-import com.example.demo.repository.CustomerRepository;
+import com.ecommerce.model.Customer;
+import com.ecommerce.repository.CustomerRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

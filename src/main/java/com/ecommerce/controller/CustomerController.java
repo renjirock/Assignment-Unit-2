@@ -1,8 +1,8 @@
-package com.example.demo.controller;
+package com.ecommerce.controller;
 
-import com.example.demo.DTO.CustomerDto;
-import com.example.demo.model.Customer;
-import com.example.demo.service.CustomerService;
+import com.ecommerce.DTO.CustomerDto;
+import com.ecommerce.model.Customer;
+import com.ecommerce.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

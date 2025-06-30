@@ -1,11 +1,13 @@
-package com.example.demo.repository.impl;
+package com.ecommerce.repository.impl;
 
-import com.example.demo.model.Product;
-import com.example.demo.repository.ProductRepository;
+import com.ecommerce.model.Product;
+import com.ecommerce.repository.ProductRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class ProductRepositoryImpl implements ProductRepository {
     private final List<Product> products = new ArrayList<Product>();
 
@@ -27,6 +29,11 @@ public class ProductRepositoryImpl implements ProductRepository {
                 .findFirst()
                 //.orElseThrow(() -> new RuntimeException("Product not found with ID: " + productId));
                 .orElse(null);
-        return null;
+        return getProduct;
+    }
+
+    @Override
+    public List<Product> getProducts() {
+        return this.products;
     }
 }

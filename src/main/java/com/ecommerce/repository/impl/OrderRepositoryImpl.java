@@ -1,11 +1,13 @@
-package com.example.demo.repository.impl;
+package com.ecommerce.repository.impl;
 
-import com.example.demo.model.Order;
-import com.example.demo.repository.OrderRepository;
+import com.ecommerce.model.Order;
+import com.ecommerce.repository.OrderRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class OrderRepositoryImpl implements OrderRepository {
     private List<Order> orders = new ArrayList<>();
 
@@ -26,5 +28,10 @@ public class OrderRepositoryImpl implements OrderRepository {
                 .filter(order -> order.getId() == orderId)
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public List<Order> gerOrders() {
+        return this.orders;
     }
 }

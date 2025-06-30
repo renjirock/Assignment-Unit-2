@@ -1,11 +1,12 @@
-package com.example.demo.repository;
+package com.ecommerce.repository;
 
-import com.example.demo.model.Product;
-import org.springframework.stereotype.Repository;
+import com.ecommerce.model.Product;
 
-@Repository
+import java.util.List;
+
 public interface ProductRepository {
     public Product saveProduct(Product product);
     public void deleteProduct(Product product);
     public Product getProduct(int productId);
+    public List<Product> getProducts();
 }
